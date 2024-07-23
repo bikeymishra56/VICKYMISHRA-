@@ -208,7 +208,7 @@ def start_attack_reply(message, target, port, time):
     user_info = message.from_user
     username = user_info.username if user_info.username else user_info.first_name
     
-    response = f"{username}, 𝐀𝐓𝐓𝐀𝐂𝐊 𝐒𝐓𝐀𝐑𝐓𝐄𝐃.\n\n𝐓𝐚𝐫𝐠𝐞𝐭: {target}\n𝐏𝐨𝐫𝐭: {port}\n𝐓𝐢𝐦𝐞: {time} 𝐒𝐞𝐜𝐨𝐧𝐝𝐬\n𝐌𝐞𝐭𝐡𝐨𝐝: BGMI\nBy https://t.me/DDos_Attack_ServerFreeze_patelji"
+    response = f"{username}, 𝐀𝐓𝐓𝐀𝐂𝐊 𝐒𝐓𝐀𝐑𝐓𝐄𝐃.\n\n𝐓𝐚𝐫𝐠𝐞𝐭: {target}\n𝐏𝐨𝐫𝐭: {port}\n𝐓𝐢𝐦𝐞: {time} 𝐒𝐞𝐜𝐨𝐧𝐝𝐬\n𝐌𝐞𝐭𝐡𝐨𝐝: BGMI\nBy https://t.me/Bikeymishra_DDOS_ATTACK"
     bot.reply_to(message, response)
 
 # Dictionary to store the last time each user ran the /bgmi command
@@ -246,9 +246,9 @@ def handle_bgmi(message):
                 subprocess.run(full_command, shell=True)
                 response = f"BGMI Attack Finished. Target: {target} Port: {port} Time: {time}"
         else:
-            response = "Usage :- /bgmi <target> <port> <time>\nBy @PATELJIDDOS"  # Updated command syntax
+            response = "Usage :- /bgmi <target> <port> <time>\nBy @BKMPHOTOGRAPHY"  # Updated command syntax
     else:
-        response = "You Are Not Authorized To Use This Command.\nBy @PATELJIDDOS"
+        response = "You Are Not Authorized To Use This Command.\nBy @BKMPHOTOGRAPHY"
 
     bot.reply_to(message, response)
 
@@ -285,7 +285,7 @@ def show_help(message):
 
  To See Admin Commands:
  /admincmd : Shows All Admin Commands.
- By. https://t.me/DDos_Attack_ServerFreeze_patelji
+ By. https://t.me/Bikeymishra_DDOS_ATTACK
 '''
     for handler in bot.message_handlers:
         if hasattr(handler, 'commands'):
@@ -300,7 +300,7 @@ def show_help(message):
 @bot.message_handler(commands=['start'])
 def welcome_start(message):
     user_name = message.from_user.first_name
-    response = f"Welcome to Your Home, {user_name}! Feel Free to Explore.\nTry To Run This Command : /help\nWelcome To The World's Best Ddos Bot\nBy https://t.me/DDos_Attack_ServerFreeze_patelji"
+    response = f"Welcome to Your Home, {user_name}! Feel Free to Explore.\nTry To Run This Command : /help\nWelcome To The World's Best Ddos Bot\nBy https://t.me/Bikeymishra_DDOS_ATTACK"
     bot.reply_to(message, response)
 
 
@@ -329,7 +329,7 @@ Pr-ice List:
 Day-->150 Rs
 Week-->900 Rs
 Month-->1600 Rs
-By @PATELJIDDOS
+By @BKMPHOTOGRAPHY
 '''
     bot.reply_to(message, response)
 
@@ -344,7 +344,7 @@ def welcome_plan(message):
 /logs : All Users Logs.
 /broadcast : Broadcast a Message.
 /clearlogs : Clear The Logs File.
-By @PATELJIDDOS
+By @BKMPHOTOGRAPHY
 '''
     bot.reply_to(message, response)
 
